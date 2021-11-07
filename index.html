@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="center">Lesson 10. Images. Font Awesome. Basic animation</h1>
+    <h1>Font Awesome + transition</h1>
+    <div class="icons">
+        <div class="icon">
+            <i class="far fa-grin fa-spin"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-adn fa-pulse"></i>
+        </div>
+        <div class="text">
+            <p>sdfghjkl</p>
+            <p>dfghjkl</p>
+            <p>sdfghjkl</p>
+        </div>
+    </div>
+    <p>Наведи на синий блок и узри магию <b>transition</b></p>
+    <h1>Transform</h1>
+    <div class="box_transform">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <p><b>Transform & keyframes</b> в действии</p>
+    <h1>CSS Background</h1>
+    <div class="box_background"></div>
+    <p>Выставляем картинку через <b>CSS</b> свойство <b>background</b> </p>
+    <h1>Universes ( HTML object-fit )</h1>
+    <div class="box_pictures_1">
+        <div class="ogo1">
+            <div class="box_picture_2"></div>
+            <div class="text_box_picture_2">
+                <p>Здесь кроется картинка с разрешением 300х181</p>
+            </div>
+        </div>
+        <div class="ogo2">
+            <div class="box_picture_3"></div>
+            <div class="text_box_picture_3">
+                <p>Здесь кроется картинка с разрешением 700х350</p>
+            </div>
+        </div>
+        <div class="ogo3">
+            <div class="box_picture_4"></div>
+            <div class="text_box_picture_4">
+                <p>Здесь кроется картинка с разрешением 1019х1085</p>
+            </div>
+        </div>
+    </div>
+    <h1>Universes in a row</h1>
+    <div class="pictures">
+        <div class="picture1">
+            <div class="cartinka1">
+                <img src="./img/ogbuba.jpg" alt="">
+            </div>
+            <div class="text_picture1">
+                <h1>OG Buda</h1>
+                <p>российский хип-хоп исполнитель, автор песен, участник творческих объединений «RNDM Crew» и «Melon Music».</p>
+            </div>
+        </div>
+        <div class="picture2">
+            <div class="cartinka2">
+                <img src="./img/maet.jpg" alt="">
+            </div>
+            <div class="text_picture2">
+                <h1>Mayot</h1>
+                <p>молодой, яркий рэп-исполнитель из Тюмени. Является участником лейбла «Melon Music». Представитель новой школы, стремительно набирающий популярность. ... Его треки быстро набирают популярность, завоевывая первые строчки хит-парадов.</p>
+            </div>
+        </div>
+        <div class="picture3">
+            <div class="cartinka3">
+                <img src="./img/obladaet.jpg" alt="">
+            </div>
+            <div class="text_picture3">
+                <h1>Obladaet</h1>
+                <p>российский хип-хоп-исполнитель и автор песен. В своей дискографии имеет 4 студийных альбома, 2 мини-альбома, 1 совместный мини-альбом и множество синглов.</p>
+            </div>
+        </div>
+    </div>
+    <h1>Images ( HTML Picture )</h1>
+    <p>Использывание тега <b>picture</b> для отображения нужной картинки на нужном разрешении.</p>
+    <p>Открой эту страницу на <b>разных девайсах</b> и посмотри на результат</p>
+    <picture>
+        <source media="(min-width: 1100px)" srcset="./img/ford_mustang_ford_bamper_133725_3840x2160.jpg">
+        <source media="(min-width: 1000px)" srcset="./img/92fc7f291babdcdd8aab760813b3ae3f6d25451c.jpg">
+        <source media="(min-width: 900px)" srcset="./img/pYIIxdgabyMRup120W3Mp2eWcMZj3FlnmdXB.png">
+        <img src="./img/700x350.jpg" alt="">
+    </picture>
+
+</body>
+</html>
